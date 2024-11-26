@@ -258,7 +258,7 @@
 /constellation/ /workers-ai/ 301
 
 # D1
-/d1/d1-api/ /d1/rest-api/d1-api 301/
+/d1/d1-api/ /d1/rest-api/d1-api/ 301
 /d1/client-api/ /d1/worker-api/ 301
 /d1/build-with-d1/d1-client-api/ /d1/worker-api/ 301
 /d1/learning/using-d1-from-pages/ /pages/functions/bindings/#d1-databases 301
