@@ -104,4 +104,4 @@ export class MyWorkflow extends WorkflowEntrypoint {
 }
 ```
 
-Note that type parameters do not _validate_ that the incoming event matches your type definition. Properties (fields) that do not exist or conform to the type you provided will be dropped. If you need to validate incoming events, we recommend a library such as [zod](https://zod.dev/) or your own validator logic.
+<Render file="workflows-type-parameters">
