@@ -458,7 +458,7 @@ Inside the policy, we’ve made this application available to our new access gro
 
 [External evaluation](/cloudflare-one/policies/access/external-evaluation/) means we have an API endpoint containing some sort of [access logic](https://github.com/cloudflare/workers-access-external-auth-example) — in this case, time of day access. We’re making an API call to this endpoint, and defining the key that Cloudflare is using to verify that the response came from the API. This is useful for several reasons:
 
-- External evaluation allows users to create bespoke security posture checks based on criteria that may not be covered by the default set of posture checks. For this example, we’d be using a service built on [Cloudflare Workers](https://workers.cloudflare.com/).
+External evaluation allows users to create bespoke security posture checks based on criteria that may not be covered by the default set of posture checks. For this example, we'd be using a service built on [Cloudflare Workers](https://workers.cloudflare.com/).
 - Restricting access to the terminal outside of business hours implements a form of time-based access control. This adds an extra layer of security by limiting the window of opportunity for potential attackers.
 
 Now, let’s look at how you’d secure RDP access as a private IP application.
