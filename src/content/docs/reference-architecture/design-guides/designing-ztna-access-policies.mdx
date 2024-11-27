@@ -354,7 +354,7 @@ Before addressing the specifics, let's consider the benefits of securing access 
 
 The key benefit here is centralizing security policy enforcement across your entire IT ecosystem. By routing Salesforce access through Cloudflare, you're not just securing Salesforce – you're integrating it into a broader Zero Trust strategy that includes a single point of visibility for all user activity, and reduces the complexity of managing multiple security systems. It also allows you to implement the enforcement of many different IdPs for access to a single SaaS application.
 
-In the context of this use case, it’s important to protect Salesforce — which contains sensitive customer data — against misuse, and to secure access only to authorized users. We’re going to design a secure access policy that can cover both of these objectives.
+In the context of this use case, it's important to protect Salesforce — which contains sensitive customer data — against misuse, and to secure access only to authorized users. We're going to design a secure access policy that can cover both of these objectives.
 
 The first step is to configure an [egress IP policy under Cloudflare Gateway](/cloudflare-one/policies/gateway/egress-policies/). This allows you to purchase and assign specific IPs to your users that have their traffic filtered via Gateway. Then in Salesforce, you can enforce that access is only permitted for traffic with a source IP that matches the one in your egress policy. This combination ensures that the only way to get access to Salesforce is via Cloudflare.
 
