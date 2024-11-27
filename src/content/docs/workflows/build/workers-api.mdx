@@ -179,7 +179,7 @@ An ID is automatically generated, but a user-provided ID can be specified (up to
 // Create a new Workflow instance with your own ID and pass params to the Workflow instance
 let instance = await env.MY_WORKFLOW.create({
 	id: myIdDefinedFromOtherSystem,
-	params: { "hello": "world }
+	params: { "hello": "world" }
 })
 return Response.json({
 	id: instance.id,
